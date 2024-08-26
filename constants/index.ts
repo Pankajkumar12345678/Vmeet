@@ -31,7 +31,7 @@ export const sidebarLinks =[
     },
     {
         label:'©2024Pankaj',
-        route:'https://www.google.com/',
+        route:'https://www.linkedin.com/in/pankaj-kumar-909287289/',
         target:"_blank", //additional add
         imgUrl:'/icons/logo.png',
     }
