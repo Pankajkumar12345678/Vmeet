@@ -178,11 +178,30 @@ const MeetingTypeList = () => {
         buttonText="Join Meeting"
         handleClick={() => router.push(values.link)}
       >
-        <Input
+
+        {/* method -1  without http:// link then add http:// in link additional for meeting join time */}
+        
+        {/* <Input
           placeholder="Meeting link"
           onChange={(e) => setValues({ ...values, link: e.target.value })}
           className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+        /> */}
+
+        {/* method -2  with http:// link then does not add http:// in link additional for meeting join time  */}
+
+        <Input placeholder="Meeting link" onChange={(e) => {
+              let link = e.target.value;
+              // Automatically prepend 'https://' if it's not present
+              if (!link.startsWith('http://')) {
+                 link = `http://${link}`;
+                }
+              setValues({ ...values, link });
+            }}
+          value={values.link} // Bind the input value to the state
+          className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
         />
+
+
       </MeetingModal>
       {/* joinMeeting meeting parts end */}
 
