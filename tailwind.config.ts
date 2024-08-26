@@ -34,13 +34,13 @@ const config = {
           3:'#F5FCFF',
         },
         orange: {
-          1: '#FF742E',
+          1: '#0d993a', //#FF742E first color
         },
         purple: {
           1: '#830EF9',
         },
         yellow: {
-          1: '#F9A90E',
+          1: '#2cccc3', //#F9A90E first color
         },
       },
       keyframes: {
