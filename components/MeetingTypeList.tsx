@@ -190,10 +190,10 @@ const MeetingTypeList = () => {
         {/* method -2  with http:// link then does not add http:// in link additional for meeting join time  */}
 
         <Input placeholder="Meeting link" onChange={(e) => {
-              let link = e.target.value.trim();  // Trim any spaces from the input
+              let link = e.target.value.trim(); 
               // Automatically prepend 'https://' if it's not present
-              if (!link.startsWith('http://')) {
-                 link = `http://${link}`;
+              if (!link.startsWith('https://')) {
+                 link = `https://${link}`;
                 }
               setValues({ ...values, link });
             }}
