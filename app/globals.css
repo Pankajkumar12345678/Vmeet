@@ -17,6 +17,31 @@
 .str-video__speaker-layout__wrapper {
   max-height: 700px;
 }
+
+/* additional adding for mobile screen ke liya */
+
+@media (max-width: 720px) {
+  /* Mobile styles */
+  .str-video__speaker-layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .video__video-placeholder {
+    border-radius: 20px;
+}
+.str-video__participant-list{
+  width:90%
+}
+.str-video__speaker-layout__wrapper {
+  width: 185px;
+  flex-grow: 1;
+  overflow-y: hidden;
+}
+.str-video__speaker-layout .str-video__participant-view {
+  aspect-ratio: 15/9;
+}
+}
+
 .str-video__participant-details {
   color: white;
 }

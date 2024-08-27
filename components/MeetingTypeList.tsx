@@ -200,8 +200,8 @@ const MeetingTypeList = () => {
           value={values.link} // Bind the input value to the state
           className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
         />
-
-
+        
+          
       </MeetingModal>
       {/* joinMeeting meeting parts end */}
 
